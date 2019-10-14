@@ -41,6 +41,8 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
         let item = items[row]
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: nil)
         cell.textLabel?.text = item.name
+        let gesture = UILongPressGestureRecognizer(target: self, action:#selector(handlerLongPressItem))
+        cell.addGestureRecognizer(gesture)
         return cell
     }
 
@@ -84,6 +86,25 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
     
     @objc func clickBarButtonItem() {
         navigationController?.pushViewController(ItemViewController(delegate: self), animated: true)
+    }
+    
+    @objc func handlerLongPressItem(_ gesture: UILongPressGestureRecognizer) {
+        if gesture.state == .began {
+            let alert = Alert(controller: self)
+            let cell = gesture.view as! UITableViewCell
+            let indexPath: IndexPath? = tableView.indexPath(for: cell)
+            let rowCell = indexPath?.row
+            if let row = rowCell {
+                alert.show("Attention", message: items[row].name, handlerCancel: { action in
+                    self.items.remove(at: row)
+                    self.tableView.deleteRows(at: [indexPath!], with: UITableView.RowAnimation.left)
+                    if !self.storage.saveItems(self.items) {
+                        alert.show("Attention", message: "Fail to update storage items")
+                    }
+                }, textCancel: "Delete")
+            }
+
+        }
     }
     
 }

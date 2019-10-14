@@ -34,4 +34,8 @@ class Meal: NSObject, NSCoding {
         self.items = coder.decodeObject(forKey: "items") as! Array<Item>
     }
     
+    func details() -> String {
+        return items.isEmpty ? "There is no item" : items.map { "\($0.name) - \($0.calories)\n" }.joined(separator: "")
+    }
+    
 }

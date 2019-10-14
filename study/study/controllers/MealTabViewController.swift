@@ -35,6 +35,8 @@ class MealTabViewController : UITableViewController, AddMealDelegate {
         let meal = meals[row]
         let uiTableViewCell = UITableViewCell()
         uiTableViewCell.textLabel?.text = meal.name
+        let gesture = UILongPressGestureRecognizer(target: self, action: #selector(longPressTableCell))
+        uiTableViewCell.addGestureRecognizer(gesture)
         return uiTableViewCell
     }
     
@@ -47,6 +49,26 @@ class MealTabViewController : UITableViewController, AddMealDelegate {
         }
     }
     
+    
+    @objc func longPressTableCell(_ gesture: UILongPressGestureRecognizer) {
+        if gesture.state == .began {
+            let cell = gesture.view as! UITableViewCell
+            let indexPath: IndexPath? = tableView.indexPath(for: cell)
+            let rowTableView = indexPath?.row
+            if let row = rowTableView {
+               let meal = meals[row]
+               let alert = Alert(controller: self)
+                alert.show("Status", message: meal.details(), handlerCancel: {
+                   action in
+                   self.meals.remove(at: row)
+                   self.tableView.deleteRows(at: [(indexPath!)], with: UITableView.RowAnimation.fade)
+                   if !self.storage.saveMeals(self.meals) {
+                       alert.show("Attention", message: "Fail to update storage")
+                   }
+               }, textCancel: "Delete")
+            }
+        }
+    }
     
     
 }
