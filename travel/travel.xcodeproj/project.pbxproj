@@ -96,16 +96,15 @@
 		C881A8522357CFCF0046E461 /* travel */ = {
 			isa = PBXGroup;
 			children = (
+				C881A8532357CFCF0046E461 /* AppDelegate.swift */,
+				C8CF3C8B23592A1200F374EF /* Home */,
 				C881A8722357EDFE0046E461 /* Assets */,
 				C881A86B2357D3420046E461 /* model */,
-				C881A8532357CFCF0046E461 /* AppDelegate.swift */,
 				C881A8552357CFCF0046E461 /* SceneDelegate.swift */,
-				C881A8572357CFCF0046E461 /* ViewController.swift */,
 				C881A8592357CFCF0046E461 /* Main.storyboard */,
 				C881A85C2357CFD20046E461 /* Assets.xcassets */,
 				C881A85E2357CFD20046E461 /* LaunchScreen.storyboard */,
 				C881A8612357CFD20046E461 /* Info.plist */,
-				C881A8702357E8B60046E461 /* TravelTableViewCell.swift */,
 			);
 			path = travel;
 			sourceTree = "<group>";
@@ -130,6 +129,31 @@
 			);
 			name = Assets;
 			path = "../../../Arquivos Projeto/Assets";
+			sourceTree = "<group>";
+		};
+		C8CF3C8B23592A1200F374EF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C8CF3C8D23592A3700F374EF /* view */,
+				C8CF3C8C23592A2F00F374EF /* controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C8CF3C8C23592A2F00F374EF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				C881A8572357CFCF0046E461 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		C8CF3C8D23592A3700F374EF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C881A8702357E8B60046E461 /* TravelTableViewCell.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
