@@ -21,6 +21,7 @@
 		C881A87A2357EDFE0046E461 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C881A8752357EDFE0046E461 /* img3.jpg */; };
 		C881A87B2357EDFE0046E461 /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C881A8762357EDFE0046E461 /* img2.jpg */; };
 		C881A87C2357EDFE0046E461 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = C881A8772357EDFE0046E461 /* img1.png */; };
+		C8F266642360EBA50034C688 /* PackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F266632360EBA50034C688 /* PackageViewController.swift */; };
 		E01C4233BA061962FE1B6753 /* Pods_travel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BA6E2AF48C9A3051174FF0 /* Pods_travel.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		C881A8752357EDFE0046E461 /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
 		C881A8762357EDFE0046E461 /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
 		C881A8772357EDFE0046E461 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		C8F266632360EBA50034C688 /* PackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageViewController.swift; sourceTree = "<group>"; };
 		E659161AAC50938367A4DBD6 /* Pods-travel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel.release.xcconfig"; path = "Target Support Files/Pods-travel/Pods-travel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				C881A8572357CFCF0046E461 /* ViewController.swift */,
+				C8F266632360EBA50034C688 /* PackageViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				C881A8712357E8B60046E461 /* TravelTableViewCell.swift in Sources */,
 				C881A8582357CFCF0046E461 /* ViewController.swift in Sources */,
 				C881A8542357CFCF0046E461 /* AppDelegate.swift in Sources */,
+				C8F266642360EBA50034C688 /* PackageViewController.swift in Sources */,
 				C881A8562357CFCF0046E461 /* SceneDelegate.swift in Sources */,
 				C881A86D2357D35A0046E461 /* Travel.swift in Sources */,
 			);

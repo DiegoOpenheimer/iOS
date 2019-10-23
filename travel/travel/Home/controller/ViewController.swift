@@ -19,6 +19,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet var buttonHotel: UIView?
     @IBOutlet var buttonPackages: UIView?
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationController?.view.addSubview(view)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "seguePackages" {
+            navigationController?.setNavigationBarHidden(false, animated: true)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonHotel?.layer.cornerRadius = 10
