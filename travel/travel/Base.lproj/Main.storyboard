@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nbI-2u-LRX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="znf-Kc-SLc">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5q-oL-UM2">
-                                <rect key="frame" x="0.0" y="44" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brasil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WW-hb-OTm">
                                         <rect key="frame" x="23" y="80.5" width="55" height="31.5"/>
@@ -67,7 +67,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoC-ns-C4n" userLabel="Button hotel">
-                                <rect key="frame" x="25" y="169" width="100" height="50"/>
+                                <rect key="frame" x="25" y="125" width="100" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotéis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOp-mL-RDs">
                                         <rect key="frame" x="25" y="13.5" width="50.5" height="23.5"/>
@@ -94,7 +94,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNL-Oj-j99">
-                                <rect key="frame" x="250" y="169" width="100" height="50"/>
+                                <rect key="frame" x="250" y="125" width="100" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwb-7G-afU">
                                         <rect key="frame" x="17.5" y="6.5" width="65" height="37"/>
@@ -105,9 +105,6 @@
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="28"/>
                                         </variation>
-                                        <connections>
-                                            <segue destination="nB9-Z3-TbW" kind="show" identifier="seguePackages" id="yCp-lq-BdC"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -123,7 +120,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l4f-XQ-RRy">
-                                <rect key="frame" x="0.0" y="250" width="375" height="368"/>
+                                <rect key="frame" x="0.0" y="206" width="375" height="412"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TravelTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TravelTableViewCell" id="J3O-1h-ghL" customClass="TravelTableViewCell" customModule="travel" customModuleProvider="target">
@@ -229,6 +226,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Xj2-Tg-pSO"/>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="56m-x0-6Nx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -239,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="90.404797601199405"/>
+            <point key="canvasLocation" x="2007.2" y="90.404797601199405"/>
         </scene>
         <!--Package View Controller-->
         <scene sceneID="Mpx-AK-nAr">
@@ -250,7 +248,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vWy-vV-rs0">
-                                <rect key="frame" x="16" y="60" width="343" height="558"/>
+                                <rect key="frame" x="16" y="16" width="343" height="602"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacotes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhS-jz-mlf">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="33"/>
@@ -258,16 +256,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="quero ir para..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7Q-cQ-TUD">
-                                        <rect key="frame" x="0.0" y="49" width="343" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="spc-dF-Kg8"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <searchBar contentMode="redraw" placeholder="quero ir para..." translatesAutoresizingMaskIntoConstraints="NO" id="DUY-TB-fXY">
+                                        <rect key="frame" x="0.0" y="49" width="343" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    </searchBar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Pacotes encontrados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afF-sb-Vm6">
+                                        <rect key="frame" x="0.0" y="121" width="343" height="33"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D2B-2f-8xd">
-                                        <rect key="frame" x="0.0" y="105" width="343" height="453"/>
+                                        <rect key="frame" x="0.0" y="170" width="343" height="432"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aAw-Np-GBY">
                                             <size key="itemSize" width="50" height="50"/>
@@ -295,10 +295,10 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHf-NI-aYF">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHf-NI-aYF">
                                                             <rect key="frame" x="20" y="136.5" width="95" height="15.5"/>
                                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="11"/>
-                                                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFs-aN-Yhk">
@@ -351,32 +351,35 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kcl-Cy-1rf"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="dnd-E4-WDl"/>
                     <navigationItem key="navigationItem" id="odi-kd-UbK"/>
                     <connections>
+                        <outlet property="labelResult" destination="afF-sb-Vm6" id="DAr-wa-oVy"/>
+                        <outlet property="searchBar" destination="DUY-TB-fXY" id="ZMH-SV-vIj"/>
                         <outlet property="uiCollectionView" destination="D2B-2f-8xd" id="W6q-62-zvG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q48-aO-JvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992.8" y="89.505247376311857"/>
+            <point key="canvasLocation" x="2932" y="89.505247376311857"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="BPY-2l-gae">
+        <!--Tab Bar Controller-->
+        <scene sceneID="6ld-kP-UEM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nbI-2u-LRX" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="znf-Kc-SLc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O5F-Mo-yO1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Km9-H1-gXZ">
                         <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qat-eX-h14"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="jhU-wQ-04d"/>
+                        <segue destination="nB9-Z3-TbW" kind="relationship" relationship="viewControllers" id="gK5-aY-9T6"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CSK-9O-DdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9Y-my-0X0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.80000000000001" y="90.404797601199405"/>
+            <point key="canvasLocation" x="1068" y="90.404797601199405"/>
         </scene>
     </scenes>
 </document>

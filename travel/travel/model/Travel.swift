@@ -9,9 +9,9 @@
 import Foundation
 
 
-class Travel {
+class Travel : NSObject {
     
-    let title: String
+    @objc let title: String
     let amountDays: Int
     let price: Double
     let pathImage: String
