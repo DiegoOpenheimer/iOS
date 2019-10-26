@@ -21,6 +21,8 @@
 		C881A87A2357EDFE0046E461 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C881A8752357EDFE0046E461 /* img3.jpg */; };
 		C881A87B2357EDFE0046E461 /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C881A8762357EDFE0046E461 /* img2.jpg */; };
 		C881A87C2357EDFE0046E461 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = C881A8772357EDFE0046E461 /* img1.png */; };
+		C8C58D6C2363920A001112A7 /* PackagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C58D6B2363920A001112A7 /* PackagesCollectionViewCell.swift */; };
+		C8E5D87B2364754A00233770 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E5D87A2364754A00233770 /* extension.swift */; };
 		C8F266642360EBA50034C688 /* PackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F266632360EBA50034C688 /* PackageViewController.swift */; };
 		E01C4233BA061962FE1B6753 /* Pods_travel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BA6E2AF48C9A3051174FF0 /* Pods_travel.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +46,8 @@
 		C881A8752357EDFE0046E461 /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
 		C881A8762357EDFE0046E461 /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
 		C881A8772357EDFE0046E461 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		C8C58D6B2363920A001112A7 /* PackagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		C8E5D87A2364754A00233770 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		C8F266632360EBA50034C688 /* PackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageViewController.swift; sourceTree = "<group>"; };
 		E659161AAC50938367A4DBD6 /* Pods-travel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel.release.xcconfig"; path = "Target Support Files/Pods-travel/Pods-travel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				C881A8532357CFCF0046E461 /* AppDelegate.swift */,
+				C8E5D87C2364762A00233770 /* Packages */,
+				C8E5D8792364752900233770 /* utils */,
 				C8CF3C8B23592A1200F374EF /* Home */,
 				C881A8722357EDFE0046E461 /* Assets */,
 				C881A86B2357D3420046E461 /* model */,
@@ -146,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				C881A8572357CFCF0046E461 /* ViewController.swift */,
-				C8F266632360EBA50034C688 /* PackageViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -155,6 +160,39 @@
 			isa = PBXGroup;
 			children = (
 				C881A8702357E8B60046E461 /* TravelTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C8E5D8792364752900233770 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C8E5D87A2364754A00233770 /* extension.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C8E5D87C2364762A00233770 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C8E5D87E2364765000233770 /* view */,
+				C8E5D87D2364764500233770 /* controller */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		C8E5D87D2364764500233770 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				C8F266632360EBA50034C688 /* PackageViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		C8E5D87E2364765000233770 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C8C58D6B2363920A001112A7 /* PackagesCollectionViewCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -281,6 +319,8 @@
 			files = (
 				C881A86F2357D4410046E461 /* TravelDAO.swift in Sources */,
 				C881A8712357E8B60046E461 /* TravelTableViewCell.swift in Sources */,
+				C8C58D6C2363920A001112A7 /* PackagesCollectionViewCell.swift in Sources */,
+				C8E5D87B2364754A00233770 /* extension.swift in Sources */,
 				C881A8582357CFCF0046E461 /* ViewController.swift in Sources */,
 				C881A8542357CFCF0046E461 /* AppDelegate.swift in Sources */,
 				C8F266642360EBA50034C688 /* PackageViewController.swift in Sources */,
