@@ -10,9 +10,9 @@ import UIKit
 
 class PackageViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
    
-    private let travelDAO = TravelDAO()
-    private var travels = Array<Travel>()
-    private var travelsFiltered = Array<Travel>()
+    private let packageDAO = PackageDAO()
+    private var packages = Array<PackageTravel>()
+    private var packagesFiltered = Array<PackageTravel>()
     
     @IBOutlet weak var labelResult: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -21,18 +21,18 @@ class PackageViewController: UIViewController, UICollectionViewDataSource, UICol
         super.viewDidLoad()
         super.hideKeyboardWhenTappedAround()
         searchBar.delegate = self
-        travels = travelDAO.getTravels()
-        travelsFiltered = travels
+        packages = packageDAO.getPackages()
+        packagesFiltered = packages
         formatterTextResult()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        let predicate = NSPredicate(format: "title contains %@", searchText)
-        let filtered: Array<Travel> = (travels as NSArray).filtered(using: predicate) as! Array
-        travelsFiltered = filtered
+        let predicate = NSPredicate(format: "name contains %@", searchText)
+        let filtered: Array<PackageTravel> = (packages as NSArray).filtered(using: predicate) as! Array
+        packagesFiltered = filtered
         let searchBarIsEmpy = searchBar.text?.isEmpty
-        if travelsFiltered.isEmpty && searchBarIsEmpy != nil && searchBarIsEmpy! {
-            travelsFiltered = travels
+        if packagesFiltered.isEmpty && searchBarIsEmpy != nil && searchBarIsEmpy! {
+            packagesFiltered = packages
         }
         formatterTextResult()
         uiCollectionView.reloadData()
@@ -45,28 +45,34 @@ class PackageViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return travelsFiltered.count
+        return packagesFiltered.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let controller = DetailsPackageViewController()
+        controller.packageTravel = packagesFiltered[indexPath.row]
+        present(controller, animated: true)
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = uiCollectionView.dequeueReusableCell(withReuseIdentifier: "packageViewCollectionCell", for: indexPath) as! PackagesCollectionViewCell
-        let travel: Travel = travelsFiltered[indexPath.row]
-        cell.name.text = travel.title
-        cell.time.text = "\(travel.amountDays) dias"
-        cell.price.text = "R$\(String(format:"%.2f", travel.price))"
-        cell.image.image = UIImage(named: travel.pathImage)
+        let package: PackageTravel = packagesFiltered[indexPath.row]
+        cell.name.text = package.name
+        cell.time.text = "\(package.travel.amountDays) dias"
+        cell.price.text = "R$\(String(format:"%.2f", package.travel.price))"
+        cell.image.image = UIImage(named: package.travel.pathImage)
         return cell
     }
 
     private func formatterTextResult() {
-        switch travelsFiltered.count {
+        switch packagesFiltered.count {
         case 0:
             labelResult.text = "Nenhum resultado encontrado"
         case 1:
             labelResult.text = "1 resultado encontrado"
         default:
-            labelResult.text = "\(travelsFiltered.count) resultados encontrados"
+            labelResult.text = "\(packagesFiltered.count) resultados encontrados"
         }
     }
 

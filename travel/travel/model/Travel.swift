@@ -11,16 +11,21 @@ import Foundation
 
 class Travel : NSObject {
     
-    @objc let title: String
+    let title: String
     let amountDays: Int
     let price: Double
-    let pathImage: String
+    var pathImage: String
     
     init(title: String, amountDays: Int, price: Double, pathImage: String) {
         self.title = title
         self.amountDays = amountDays
         self.price = price
         self.pathImage = pathImage
+    }
+    
+    func withImagePath(image: String) -> Travel {
+        pathImage = image
+        return self
     }
     
 }
