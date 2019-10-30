@@ -1,16 +1,20 @@
 PODS:
+  - IHKeyboardAvoiding (4.7)
   - Toast-Swift (5.0.0)
 
 DEPENDENCIES:
+  - IHKeyboardAvoiding
   - Toast-Swift (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
+    - IHKeyboardAvoiding
     - Toast-Swift
 
 SPEC CHECKSUMS:
+  IHKeyboardAvoiding: 4cae0880c3975feffa278495df894c5166e71ad0
   Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
 
-PODFILE CHECKSUM: 6268cbcfda32c9dad1b9ba0dd99530148e87273a
+PODFILE CHECKSUM: 1d278f93e3ec2b0513d051d116a742a69d601dfb
 
 COCOAPODS: 1.8.4

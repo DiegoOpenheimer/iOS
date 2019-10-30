@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import IHKeyboardAvoiding
 
 class DetailsPackageViewController: UIViewController {
 
     var packageTravel: PackageTravel?
     @IBOutlet var image: UIImageView?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let package = packageTravel {
             image?.image = UIImage(named: package.travel.pathImage)
         }
         super.hideKeyboardWhenTappedAround()
+        KeyboardAvoiding.avoidingView = self.view
     }
 
     @IBAction func popPage(_ sender: UIButton) {
