@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="znf-Kc-SLc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yav-52-pRV">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Viagens-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="travel" customModuleProvider="target" sceneMemberID="viewController">
@@ -226,7 +226,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Xj2-Tg-pSO"/>
+                    <tabBarItem key="tabBarItem" title="Viagens" image="icon_package.png" id="Xj2-Tg-pSO"/>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="56m-x0-6Nx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -239,7 +239,7 @@
             </objects>
             <point key="canvasLocation" x="2007.2" y="90.404797601199405"/>
         </scene>
-        <!--Package View Controller-->
+        <!--Buscar-->
         <scene sceneID="Mpx-AK-nAr">
             <objects>
                 <viewController id="nB9-Z3-TbW" customClass="PackageViewController" customModule="travel" customModuleProvider="target" sceneMemberID="viewController">
@@ -257,17 +257,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <searchBar contentMode="redraw" placeholder="quero ir para..." translatesAutoresizingMaskIntoConstraints="NO" id="DUY-TB-fXY">
-                                        <rect key="frame" x="0.0" y="49" width="343" height="56"/>
+                                        <rect key="frame" x="0.0" y="49" width="343" height="100"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Pacotes encontrados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afF-sb-Vm6">
-                                        <rect key="frame" x="0.0" y="121" width="343" height="33"/>
+                                        <rect key="frame" x="0.0" y="165" width="343" height="33"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D2B-2f-8xd">
-                                        <rect key="frame" x="0.0" y="170" width="343" height="432"/>
+                                        <rect key="frame" x="0.0" y="214" width="343" height="388"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aAw-Np-GBY">
                                             <size key="itemSize" width="50" height="50"/>
@@ -351,7 +351,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kcl-Cy-1rf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="dnd-E4-WDl"/>
+                    <tabBarItem key="tabBarItem" title="Buscar" image="icon_search.png" id="dnd-E4-WDl"/>
                     <navigationItem key="navigationItem" id="odi-kd-UbK"/>
                     <connections>
                         <outlet property="labelResult" destination="afF-sb-Vm6" id="DAr-wa-oVy"/>
@@ -361,14 +361,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q48-aO-JvE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2932" y="89.505247376311857"/>
+            <point key="canvasLocation" x="2935" y="90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Td-LD-gU8">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Yav-52-pRV" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FWV-iO-2iE">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="znf-Kc-SLc" kind="relationship" relationship="rootViewController" id="7PN-3x-rbN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RsV-zQ-Dmu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="90"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6ld-kP-UEM">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="znf-Kc-SLc" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="eyE-gB-DEg"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Km9-H1-gXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -379,7 +397,11 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9Y-my-0X0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="90.404797601199405"/>
+            <point key="canvasLocation" x="1039" y="90"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_package.png" width="25" height="25"/>
+        <image name="icon_search.png" width="25" height="25"/>
+    </resources>
 </document>

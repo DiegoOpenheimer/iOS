@@ -13,8 +13,9 @@ class DetailsPackageViewController: UIViewController {
 
     var packageTravel: PackageTravel?
     @IBOutlet var image: UIImageView?
-    
     @IBOutlet weak var textFieldDate: UITextField!
+    private let creditCard: CreditCard = CreditCard()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let package = packageTravel {
@@ -26,7 +27,7 @@ class DetailsPackageViewController: UIViewController {
     }
 
     @IBAction func popPage(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     
@@ -41,5 +42,35 @@ class DetailsPackageViewController: UIViewController {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd MM yyyy"
         textFieldDate.text = dateFormatter.string(from: sender.date)
+        creditCard.validateDate = textFieldDate.text
     }
+    
+    
+    @IBAction func onNumberCard(_ sender: UITextField) {
+        creditCard.numberCard = Int(sender.text ?? "")
+    }
+    
+    
+    @IBAction func onNameCard(_ sender: UITextField) {
+        print("ok, value is changed")
+        creditCard.nameCard = sender.text
+    }
+    
+    
+    @IBAction func onCvv(_ sender: UITextField) {
+        creditCard.cvv = sender.text
+    }
+    
+    @IBAction func finalizePurchase(_ sender: UIButton) {
+        if creditCard.validateAttributes() {
+            let controller = PurchaseCompletedViewController()
+            controller.package = packageTravel
+            navigationController?.pushViewController(controller, animated: true)
+        } else {
+            let alert = Alert(controller: self)
+            alert.show("Preencha todos os campos")
+        }
+
+    }
+    
 }

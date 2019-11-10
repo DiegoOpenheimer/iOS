@@ -51,7 +51,7 @@ class PackageViewController: UIViewController, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = DetailsPackageViewController()
         controller.packageTravel = packagesFiltered[indexPath.row]
-        present(controller, animated: true)
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     
