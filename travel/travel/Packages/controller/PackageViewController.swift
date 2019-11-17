@@ -17,6 +17,7 @@ class PackageViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var labelResult: UILabel!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var uiCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         super.hideKeyboardWhenTappedAround()
@@ -39,9 +40,10 @@ class PackageViewController: UIViewController, UICollectionViewDataSource, UICol
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let padding: CGFloat =  16
+        let padding: CGFloat =  20
         let collectionViewSize = collectionView.frame.size.width - padding
-        return CGSize(width: collectionViewSize / 2, height: 160)
+        let division: CGFloat = UIDevice.current.userInterfaceIdiom == .pad ? 3 : 2
+        return CGSize(width: collectionViewSize / division, height: 160)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
