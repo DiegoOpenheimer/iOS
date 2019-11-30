@@ -6,6 +6,7 @@ target 'schedule' do
   use_frameworks!
 
   # Pods for schedule
+  pod 'Toast-Swift', '~> 5.0.0'
 
   target 'scheduleTests' do
     inherit! :search_paths

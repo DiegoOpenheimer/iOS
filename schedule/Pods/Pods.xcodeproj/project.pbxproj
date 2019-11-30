@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F4938B378E905F3EC4F6980776824D1 /* Pods-schedule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD50B1D8D65C8837D8B78AFDE2F1417 /* Pods-schedule-dummy.m */; };
-		33DDCA48C9EAAAC9619163FA5CE26C1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		39A4DE4903393C51DE5A3DBB4FD2A778 /* Pods-schedule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87B33EAA3CBB3A4F10ED3712590E238C /* Pods-schedule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53545E3C8D5260D1957ACE360DD2F3A6 /* Pods-schedule-scheduleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EEE8FE888F8BA4823CC0038FF9E790A /* Pods-schedule-scheduleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A274EF30E80BB7B80A114059F5FB085 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		8A78B5EDE05D9B6BF9F5E7F6791DFAA3 /* Pods-scheduleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 690733F8FF54D71A1CF63B71311A76D3 /* Pods-scheduleTests-dummy.m */; };
-		8DD72297063979688E4B38B9EA3FE9DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		8EC03356CCE28A6965DC749145E0E52E /* Pods-schedule-scheduleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB03E7C16B7409ADCD7D87C55F9EF1A0 /* Pods-schedule-scheduleUITests-dummy.m */; };
-		D9AD45206261D252DB77A637CBBC69C1 /* Pods-scheduleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51B50425F78F13C6A577D5A99AC29257 /* Pods-scheduleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABFD4EB978ADF3D6ED0B5A71BC89706A /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B239598812D31852BCCDC0A6ED99486 /* Toast.swift */; };
+		6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9210258F33042AA58BD454551F66FD1 /* Toast-Swift-dummy.m */; };
+		7722929CB9C56A4A90834F399590F576 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		785983C88EC5CFB77599A17083462B85 /* Pods-schedule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 967882328178BB13516B6C966A57CB24 /* Pods-schedule-dummy.m */; };
+		8A78B5EDE05D9B6BF9F5E7F6791DFAA3 /* Pods-scheduleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1AA6936762DD9CE38E86FBE1911632B /* Pods-scheduleTests-dummy.m */; };
+		8DD72297063979688E4B38B9EA3FE9DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		8F69FCF7C144866BEA179608847DA93E /* Pods-schedule-scheduleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F6E560E13743242084577C9E7B40424 /* Pods-schedule-scheduleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95ACABC71585D657249CC92BA7731A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		A6940F6BE82D5097A69DD3451936B484 /* Pods-schedule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B0FA5D843A294263C001EFF4D35EBF /* Pods-schedule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C06D290B9216533843023A0BF93F5927 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */; };
+		D22AE594778E7E41CB4CA918C469FB93 /* Pods-schedule-scheduleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B7AA7809D937EF137B3EACC60FE71 /* Pods-schedule-scheduleUITests-dummy.m */; };
+		D9AD45206261D252DB77A637CBBC69C1 /* Pods-scheduleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D540E9566ED156D4150A1293ECEFC7 /* Pods-scheduleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE1B2BEA2674AAD237CE96E89F9E2CFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,46 +31,71 @@
 			remoteGlobalIDString = 4D9E89A4356EC2BEA459908E5ED45A48;
 			remoteInfo = "Pods-schedule";
 		};
+		2AF6D0178EC150639ECA85C4DC8CA350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
+			remoteInfo = "Toast-Swift";
+		};
+		BE13DD859C094494EBBA9363FDB4550D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
+			remoteInfo = "Toast-Swift";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EEE8FE888F8BA4823CC0038FF9E790A /* Pods-schedule-scheduleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-schedule-scheduleUITests-umbrella.h"; sourceTree = "<group>"; };
-		24BADB4187DA4D745AF51EEC47F19CDC /* Pods-schedule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-schedule-Info.plist"; sourceTree = "<group>"; };
-		26CEA9E67BDABD1E74090AA4579AAE2D /* Pods-scheduleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-scheduleTests-Info.plist"; sourceTree = "<group>"; };
-		29D9EE4B88A88E703D14D9576253131D /* Pods-schedule-scheduleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-schedule-scheduleUITests.modulemap"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4B282D8404E7B9BB5E67FC76CF511BE0 /* Pods-schedule-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-schedule-acknowledgements.markdown"; sourceTree = "<group>"; };
-		51B50425F78F13C6A577D5A99AC29257 /* Pods-scheduleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-scheduleTests-umbrella.h"; sourceTree = "<group>"; };
-		5D720E6550FE5CFEFCEC0950951600CD /* Pods-schedule-scheduleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-schedule-scheduleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		60DBF324BC86F311CD52BB636853085D /* Pods-scheduleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-scheduleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		60FEBA567AB539A737D82DB8FB8F26A8 /* Pods-schedule-scheduleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-schedule-scheduleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6614F641423001959FACB99EE1313634 /* Pods-scheduleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scheduleTests.release.xcconfig"; sourceTree = "<group>"; };
-		690733F8FF54D71A1CF63B71311A76D3 /* Pods-scheduleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-scheduleTests-dummy.m"; sourceTree = "<group>"; };
-		72FE10666BD6CF2D62497C9B6F713FBC /* Pods-schedule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-schedule.modulemap"; sourceTree = "<group>"; };
-		7897DE351B0438D7A9C7B796F3C17162 /* Pods-schedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-schedule.debug.xcconfig"; sourceTree = "<group>"; };
-		87B33EAA3CBB3A4F10ED3712590E238C /* Pods-schedule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-schedule-umbrella.h"; sourceTree = "<group>"; };
-		9CA3843561ACC4150B4E7766F0461037 /* Pods-schedule-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-schedule-acknowledgements.plist"; sourceTree = "<group>"; };
+		0750E0DC3B5281EFCFA79F69A3A25035 /* Pods-schedule-scheduleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-schedule-scheduleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		07D540E9566ED156D4150A1293ECEFC7 /* Pods-scheduleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-scheduleTests-umbrella.h"; sourceTree = "<group>"; };
+		09F4AE7AEBCE260FDABEC890B296B775 /* Pods-schedule-scheduleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-schedule-scheduleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		15638E95AA1C42A880B390C513D20670 /* Pods-schedule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-schedule.modulemap"; sourceTree = "<group>"; };
+		2462DE39703662A34A95B84D22716A9A /* Pods-schedule-scheduleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-schedule-scheduleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2D495EE095AEED5516BE35EF5E50373F /* Pods-schedule-scheduleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-schedule-scheduleUITests-Info.plist"; sourceTree = "<group>"; };
+		2F6E560E13743242084577C9E7B40424 /* Pods-schedule-scheduleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-schedule-scheduleUITests-umbrella.h"; sourceTree = "<group>"; };
+		3BF66E09F33C9FAD1DC989993C10B6DF /* Pods-schedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-schedule.release.xcconfig"; sourceTree = "<group>"; };
+		4F9B7AA7809D937EF137B3EACC60FE71 /* Pods-schedule-scheduleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-schedule-scheduleUITests-dummy.m"; sourceTree = "<group>"; };
+		5B239598812D31852BCCDC0A6ED99486 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
+		66EF75F903B559A370A07A3AD7868AB9 /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
+		6B471E54CBB20CBB8BBE6DDDF6F7029E /* Pods-schedule-scheduleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-schedule-scheduleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DC8127B2039BD4B07C8C2D9103BA82A /* Pods-schedule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-schedule-Info.plist"; sourceTree = "<group>"; };
+		6DDB9E62475BDA2AABAB5983AF58DB41 /* Pods-schedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-schedule.debug.xcconfig"; sourceTree = "<group>"; };
+		7660C05A2AAE67795BE31B838C52F595 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
+		76BE134770E48768F12BD36ADCE36277 /* Pods-scheduleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-scheduleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		80E48487F30236BA4BC89780C8D8F7C6 /* Pods-schedule-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-schedule-acknowledgements.plist"; sourceTree = "<group>"; };
+		854FF355902E2BBABD8F69EA1EF1F36B /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
+		8610E4CDAC701C275CA7B7EF820B1562 /* Pods-scheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		967882328178BB13516B6C966A57CB24 /* Pods-schedule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-schedule-dummy.m"; sourceTree = "<group>"; };
+		9A0D9FB9360A088AAFB32B3EF06D1CF6 /* Pods-scheduleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-scheduleTests-Info.plist"; sourceTree = "<group>"; };
+		9BFA5CB859A9D653C372373DF7554AA5 /* Pods-schedule-scheduleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-schedule-scheduleUITests.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ABFD4EB978ADF3D6ED0B5A71BC89706A /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
 		ACDF341BA07A2C05242E8CBAD5A8E06A /* Pods_scheduleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_scheduleTests.framework; path = "Pods-scheduleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEE857A39C23DACAF0AF214CF06B61E6 /* Pods-schedule-scheduleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-schedule-scheduleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B780F8FD481CD3D9A820C87D5AB00828 /* Pods-scheduleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-scheduleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B1AA6936762DD9CE38E86FBE1911632B /* Pods-scheduleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-scheduleTests-dummy.m"; sourceTree = "<group>"; };
 		C4AD64FBAAA5D7DF8CF8B721D9E53C26 /* Pods_schedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_schedule.framework; path = "Pods-schedule.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D03B83F7DEC7A503E2AD68EA1B187C85 /* Pods-scheduleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scheduleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C58972E70558452312DDA13044A59DD8 /* Pods-schedule-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-schedule-frameworks.sh"; sourceTree = "<group>"; };
+		C747EABE486A81AFDCD442192D01457A /* Pods-schedule-scheduleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-schedule-scheduleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D3916A4668E41C71774484A43A0CA850 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B0FA5D843A294263C001EFF4D35EBF /* Pods-schedule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-schedule-umbrella.h"; sourceTree = "<group>"; };
 		D7B3630BEAA096A44EE2B6B516DD4EE6 /* Pods_schedule_scheduleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_schedule_scheduleUITests.framework; path = "Pods-schedule-scheduleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7E48B469F50B36DFCAD5C21B790615C /* Pods-scheduleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-scheduleTests.modulemap"; sourceTree = "<group>"; };
-		DB03E7C16B7409ADCD7D87C55F9EF1A0 /* Pods-schedule-scheduleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-schedule-scheduleUITests-dummy.m"; sourceTree = "<group>"; };
-		E15038CDFAE707C3B43B8CAB1DE3CAC9 /* Pods-schedule-scheduleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-schedule-scheduleUITests-Info.plist"; sourceTree = "<group>"; };
-		EAD50B1D8D65C8837D8B78AFDE2F1417 /* Pods-schedule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-schedule-dummy.m"; sourceTree = "<group>"; };
-		F2B5E06102320C1D815629D8F8CF8B47 /* Pods-schedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-schedule.release.xcconfig"; sourceTree = "<group>"; };
-		FE105E11CAB6C548167AECD956B69165 /* Pods-schedule-scheduleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-schedule-scheduleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DDB1C3448BC7A195F76B53E8B697107A /* Pods-scheduleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-scheduleTests.modulemap"; sourceTree = "<group>"; };
+		EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EC75DE87785AEB69ABF9ABACB991BF0F /* Pods-schedule-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-schedule-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F266FBE13D761DC237A94D4F645E77E9 /* Pods-scheduleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scheduleTests.release.xcconfig"; sourceTree = "<group>"; };
+		F9210258F33042AA58BD454551F66FD1 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
+		FEF7154E879C5873862544EAC2BAC401 /* Pods-scheduleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-scheduleTests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D5BCB67F21E2B46F73068210F5D2DBB /* Frameworks */ = {
+		09AD52C0FFC8B34B650CA48B99BBE569 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33DDCA48C9EAAAC9619163FA5CE26C1D /* Foundation.framework in Frameworks */,
+				7722929CB9C56A4A90834F399590F576 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,109 +107,155 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC6F7CEA0D0BB84B11D90309049B2621 /* Frameworks */ = {
+		6102CF7EA55F5A7D669F88BF0D1A701F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A274EF30E80BB7B80A114059F5FB085 /* Foundation.framework in Frameworks */,
+				95ACABC71585D657249CC92BA7731A8F /* Foundation.framework in Frameworks */,
+				C06D290B9216533843023A0BF93F5927 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B56EBA746C0D449C789838C95A3625A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1B2BEA2674AAD237CE96E89F9E2CFD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16751CDBE64F031DD105E4BC394D270D /* Pods-scheduleTests */ = {
+		01B6499BB351F4D13DA64A16EF49B6FC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D7E48B469F50B36DFCAD5C21B790615C /* Pods-scheduleTests.modulemap */,
-				60DBF324BC86F311CD52BB636853085D /* Pods-scheduleTests-acknowledgements.markdown */,
-				B780F8FD481CD3D9A820C87D5AB00828 /* Pods-scheduleTests-acknowledgements.plist */,
-				690733F8FF54D71A1CF63B71311A76D3 /* Pods-scheduleTests-dummy.m */,
-				26CEA9E67BDABD1E74090AA4579AAE2D /* Pods-scheduleTests-Info.plist */,
-				51B50425F78F13C6A577D5A99AC29257 /* Pods-scheduleTests-umbrella.h */,
-				D03B83F7DEC7A503E2AD68EA1B187C85 /* Pods-scheduleTests.debug.xcconfig */,
-				6614F641423001959FACB99EE1313634 /* Pods-scheduleTests.release.xcconfig */,
+				E1C705E8960F6BF99A8312A87ABF6D98 /* Toast-Swift */,
 			);
-			name = "Pods-scheduleTests";
-			path = "Target Support Files/Pods-scheduleTests";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		2F24404AA715E4CC51A7A42B9A515DF0 /* Pods-schedule */ = {
+		0795B6E1039E8ECC3108903B8D2D5373 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				72FE10666BD6CF2D62497C9B6F713FBC /* Pods-schedule.modulemap */,
-				4B282D8404E7B9BB5E67FC76CF511BE0 /* Pods-schedule-acknowledgements.markdown */,
-				9CA3843561ACC4150B4E7766F0461037 /* Pods-schedule-acknowledgements.plist */,
-				EAD50B1D8D65C8837D8B78AFDE2F1417 /* Pods-schedule-dummy.m */,
-				24BADB4187DA4D745AF51EEC47F19CDC /* Pods-schedule-Info.plist */,
-				87B33EAA3CBB3A4F10ED3712590E238C /* Pods-schedule-umbrella.h */,
-				7897DE351B0438D7A9C7B796F3C17162 /* Pods-schedule.debug.xcconfig */,
-				F2B5E06102320C1D815629D8F8CF8B47 /* Pods-schedule.release.xcconfig */,
+				D3916A4668E41C71774484A43A0CA850 /* Toast-Swift.modulemap */,
+				66EF75F903B559A370A07A3AD7868AB9 /* Toast-Swift.xcconfig */,
+				F9210258F33042AA58BD454551F66FD1 /* Toast-Swift-dummy.m */,
+				854FF355902E2BBABD8F69EA1EF1F36B /* Toast-Swift-Info.plist */,
+				7660C05A2AAE67795BE31B838C52F595 /* Toast-Swift-prefix.pch */,
+				ABFD4EB978ADF3D6ED0B5A71BC89706A /* Toast-Swift-umbrella.h */,
 			);
-			name = "Pods-schedule";
-			path = "Target Support Files/Pods-schedule";
+			name = "Support Files";
+			path = "../Target Support Files/Toast-Swift";
 			sourceTree = "<group>";
 		};
-		3AD94A78B0496F9C0A218CD088D881E3 /* Products */ = {
+		0CC4537ABD47161CDA5558C0AE6BD1F6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B7F157B983E8BF5F378285B79DCBBE8 /* Pods-schedule */,
+				F02770291FA8E3BCE86C50708BF02EF2 /* Pods-schedule-scheduleUITests */,
+				AD037BE6F06E654FE3EE3AF0C6D1E651 /* Pods-scheduleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		197F09E4C9F6D56F56600B228A7BC8D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				C4AD64FBAAA5D7DF8CF8B721D9E53C26 /* Pods_schedule.framework */,
 				D7B3630BEAA096A44EE2B6B516DD4EE6 /* Pods_schedule_scheduleUITests.framework */,
 				ACDF341BA07A2C05242E8CBAD5A8E06A /* Pods_scheduleTests.framework */,
+				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5160EF058C6245E16BDF19C7CE98C743 /* Pods-schedule-scheduleUITests */ = {
+		6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				29D9EE4B88A88E703D14D9576253131D /* Pods-schedule-scheduleUITests.modulemap */,
-				FE105E11CAB6C548167AECD956B69165 /* Pods-schedule-scheduleUITests-acknowledgements.markdown */,
-				60FEBA567AB539A737D82DB8FB8F26A8 /* Pods-schedule-scheduleUITests-acknowledgements.plist */,
-				DB03E7C16B7409ADCD7D87C55F9EF1A0 /* Pods-schedule-scheduleUITests-dummy.m */,
-				E15038CDFAE707C3B43B8CAB1DE3CAC9 /* Pods-schedule-scheduleUITests-Info.plist */,
-				0EEE8FE888F8BA4823CC0038FF9E790A /* Pods-schedule-scheduleUITests-umbrella.h */,
-				AEE857A39C23DACAF0AF214CF06B61E6 /* Pods-schedule-scheduleUITests.debug.xcconfig */,
-				5D720E6550FE5CFEFCEC0950951600CD /* Pods-schedule-scheduleUITests.release.xcconfig */,
-			);
-			name = "Pods-schedule-scheduleUITests";
-			path = "Target Support Files/Pods-schedule-scheduleUITests";
-			sourceTree = "<group>";
-		};
-		58096A08A82975291ABCCCC6F5997CF2 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2F24404AA715E4CC51A7A42B9A515DF0 /* Pods-schedule */,
-				5160EF058C6245E16BDF19C7CE98C743 /* Pods-schedule-scheduleUITests */,
-				16751CDBE64F031DD105E4BC394D270D /* Pods-scheduleTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */,
+				CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		8B7F157B983E8BF5F378285B79DCBBE8 /* Pods-schedule */ = {
+			isa = PBXGroup;
+			children = (
+				15638E95AA1C42A880B390C513D20670 /* Pods-schedule.modulemap */,
+				EC75DE87785AEB69ABF9ABACB991BF0F /* Pods-schedule-acknowledgements.markdown */,
+				80E48487F30236BA4BC89780C8D8F7C6 /* Pods-schedule-acknowledgements.plist */,
+				967882328178BB13516B6C966A57CB24 /* Pods-schedule-dummy.m */,
+				C58972E70558452312DDA13044A59DD8 /* Pods-schedule-frameworks.sh */,
+				6DC8127B2039BD4B07C8C2D9103BA82A /* Pods-schedule-Info.plist */,
+				D7B0FA5D843A294263C001EFF4D35EBF /* Pods-schedule-umbrella.h */,
+				6DDB9E62475BDA2AABAB5983AF58DB41 /* Pods-schedule.debug.xcconfig */,
+				3BF66E09F33C9FAD1DC989993C10B6DF /* Pods-schedule.release.xcconfig */,
+			);
+			name = "Pods-schedule";
+			path = "Target Support Files/Pods-schedule";
+			sourceTree = "<group>";
+		};
+		AD037BE6F06E654FE3EE3AF0C6D1E651 /* Pods-scheduleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDB1C3448BC7A195F76B53E8B697107A /* Pods-scheduleTests.modulemap */,
+				76BE134770E48768F12BD36ADCE36277 /* Pods-scheduleTests-acknowledgements.markdown */,
+				FEF7154E879C5873862544EAC2BAC401 /* Pods-scheduleTests-acknowledgements.plist */,
+				B1AA6936762DD9CE38E86FBE1911632B /* Pods-scheduleTests-dummy.m */,
+				9A0D9FB9360A088AAFB32B3EF06D1CF6 /* Pods-scheduleTests-Info.plist */,
+				07D540E9566ED156D4150A1293ECEFC7 /* Pods-scheduleTests-umbrella.h */,
+				8610E4CDAC701C275CA7B7EF820B1562 /* Pods-scheduleTests.debug.xcconfig */,
+				F266FBE13D761DC237A94D4F645E77E9 /* Pods-scheduleTests.release.xcconfig */,
+			);
+			name = "Pods-scheduleTests";
+			path = "Target Support Files/Pods-scheduleTests";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				3AD94A78B0496F9C0A218CD088D881E3 /* Products */,
-				58096A08A82975291ABCCCC6F5997CF2 /* Targets Support Files */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				01B6499BB351F4D13DA64A16EF49B6FC /* Pods */,
+				197F09E4C9F6D56F56600B228A7BC8D3 /* Products */,
+				0CC4537ABD47161CDA5558C0AE6BD1F6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E1C705E8960F6BF99A8312A87ABF6D98 /* Toast-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				5B239598812D31852BCCDC0A6ED99486 /* Toast.swift */,
+				0795B6E1039E8ECC3108903B8D2D5373 /* Support Files */,
 			);
-			name = Frameworks;
+			name = "Toast-Swift";
+			path = "Toast-Swift";
+			sourceTree = "<group>";
+		};
+		F02770291FA8E3BCE86C50708BF02EF2 /* Pods-schedule-scheduleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BFA5CB859A9D653C372373DF7554AA5 /* Pods-schedule-scheduleUITests.modulemap */,
+				2462DE39703662A34A95B84D22716A9A /* Pods-schedule-scheduleUITests-acknowledgements.markdown */,
+				0750E0DC3B5281EFCFA79F69A3A25035 /* Pods-schedule-scheduleUITests-acknowledgements.plist */,
+				4F9B7AA7809D937EF137B3EACC60FE71 /* Pods-schedule-scheduleUITests-dummy.m */,
+				C747EABE486A81AFDCD442192D01457A /* Pods-schedule-scheduleUITests-frameworks.sh */,
+				2D495EE095AEED5516BE35EF5E50373F /* Pods-schedule-scheduleUITests-Info.plist */,
+				2F6E560E13743242084577C9E7B40424 /* Pods-schedule-scheduleUITests-umbrella.h */,
+				6B471E54CBB20CBB8BBE6DDDF6F7029E /* Pods-schedule-scheduleUITests.debug.xcconfig */,
+				09F4AE7AEBCE260FDABEC890B296B775 /* Pods-schedule-scheduleUITests.release.xcconfig */,
+			);
+			name = "Pods-schedule-scheduleUITests";
+			path = "Target Support Files/Pods-schedule-scheduleUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,19 +269,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		892FAE87E9BBDF99C6B9E20ECBC5471C /* Headers */ = {
+		541A0721D8D26374CF7CF04B1473A45A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53545E3C8D5260D1957ACE360DD2F3A6 /* Pods-schedule-scheduleUITests-umbrella.h in Headers */,
+				2024EE5E265681137A9FEBC630E6E0F1 /* Toast-Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E999F6FB53E36EB9B1F5A4875B89464D /* Headers */ = {
+		F485588FBE187F8E9840ADBBBD8EE2A2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39A4DE4903393C51DE5A3DBB4FD2A778 /* Pods-schedule-umbrella.h in Headers */,
+				A6940F6BE82D5097A69DD3451936B484 /* Pods-schedule-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F56F47540001D295FF1D9965AAAA2BAE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F69FCF7C144866BEA179608847DA93E /* Pods-schedule-scheduleUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,16 +298,17 @@
 /* Begin PBXNativeTarget section */
 		17B5102DB0EE97B0DA0F99130A472DC3 /* Pods-schedule-scheduleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6C16759AD96AC53847F75F80C06ACA8 /* Build configuration list for PBXNativeTarget "Pods-schedule-scheduleUITests" */;
+			buildConfigurationList = 2DD2880779586A033B762F7A7DAF75FB /* Build configuration list for PBXNativeTarget "Pods-schedule-scheduleUITests" */;
 			buildPhases = (
-				892FAE87E9BBDF99C6B9E20ECBC5471C /* Headers */,
-				0E1D0642D2F62DB84227035702EADA4D /* Sources */,
-				EC6F7CEA0D0BB84B11D90309049B2621 /* Frameworks */,
-				82A2AD71774A3C472FC4E915941B0033 /* Resources */,
+				F56F47540001D295FF1D9965AAAA2BAE /* Headers */,
+				195BD451703C8BA43264836ECA5CB7B1 /* Sources */,
+				09AD52C0FFC8B34B650CA48B99BBE569 /* Frameworks */,
+				AC8221179E090B2CEC933AF08E59335E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CCD1A7A62D0D6C1A0C054AD6A98DFE6C /* PBXTargetDependency */,
 			);
 			name = "Pods-schedule-scheduleUITests";
 			productName = "Pods-schedule-scheduleUITests";
@@ -232,16 +317,17 @@
 		};
 		4D9E89A4356EC2BEA459908E5ED45A48 /* Pods-schedule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98BBE97373823BB4B12BEF7F7AB00A9F /* Build configuration list for PBXNativeTarget "Pods-schedule" */;
+			buildConfigurationList = 48122FDA194FB1ABCDD751C0B66FF2EE /* Build configuration list for PBXNativeTarget "Pods-schedule" */;
 			buildPhases = (
-				E999F6FB53E36EB9B1F5A4875B89464D /* Headers */,
-				4A5631FD2BD8BE19B409E05CC83742D8 /* Sources */,
-				0D5BCB67F21E2B46F73068210F5D2DBB /* Frameworks */,
-				9F809EED3767EAB857160FEF605C1CAE /* Resources */,
+				F485588FBE187F8E9840ADBBBD8EE2A2 /* Headers */,
+				DF449A686F9236598A0C5E6E9E1F0F1F /* Sources */,
+				8B56EBA746C0D449C789838C95A3625A /* Frameworks */,
+				16041EED1E881D48C5FFE23CF8002604 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6955DF9C7EBB1D2464374AA215CA98DE /* PBXTargetDependency */,
 			);
 			name = "Pods-schedule";
 			productName = "Pods-schedule";
@@ -267,6 +353,24 @@
 			productReference = ACDF341BA07A2C05242E8CBAD5A8E06A /* Pods_scheduleTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C401847A53B4C2810311A8CBD715AD /* Build configuration list for PBXNativeTarget "Toast-Swift" */;
+			buildPhases = (
+				541A0721D8D26374CF7CF04B1473A45A /* Headers */,
+				32133C6B0EACD421CB9EB1ABFCE89B97 /* Sources */,
+				6102CF7EA55F5A7D669F88BF0D1A701F /* Frameworks */,
+				8812DCC289D1E7BE07818E350A3B8656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Toast-Swift";
+			productName = "Toast-Swift";
+			productReference = D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -285,26 +389,34 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 3AD94A78B0496F9C0A218CD088D881E3 /* Products */;
+			productRefGroup = 197F09E4C9F6D56F56600B228A7BC8D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4D9E89A4356EC2BEA459908E5ED45A48 /* Pods-schedule */,
 				17B5102DB0EE97B0DA0F99130A472DC3 /* Pods-schedule-scheduleUITests */,
 				4E8698039A536E8A3CD65F8AC6A4AD8C /* Pods-scheduleTests */,
+				B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		82A2AD71774A3C472FC4E915941B0033 /* Resources */ = {
+		16041EED1E881D48C5FFE23CF8002604 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F809EED3767EAB857160FEF605C1CAE /* Resources */ = {
+		8812DCC289D1E7BE07818E350A3B8656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC8221179E090B2CEC933AF08E59335E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,19 +433,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0E1D0642D2F62DB84227035702EADA4D /* Sources */ = {
+		195BD451703C8BA43264836ECA5CB7B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC03356CCE28A6965DC749145E0E52E /* Pods-schedule-scheduleUITests-dummy.m in Sources */,
+				D22AE594778E7E41CB4CA918C469FB93 /* Pods-schedule-scheduleUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A5631FD2BD8BE19B409E05CC83742D8 /* Sources */ = {
+		32133C6B0EACD421CB9EB1ABFCE89B97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F4938B378E905F3EC4F6980776824D1 /* Pods-schedule-dummy.m in Sources */,
+				6B326644BB08AEDF697A82A0F1A66D68 /* Toast-Swift-dummy.m in Sources */,
+				4753716AE7A1AB22FB6BA61AA74D942F /* Toast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,21 +458,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF449A686F9236598A0C5E6E9E1F0F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				785983C88EC5CFB77599A17083462B85 /* Pods-schedule-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6955DF9C7EBB1D2464374AA215CA98DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Toast-Swift";
+			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
+			targetProxy = 2AF6D0178EC150639ECA85C4DC8CA350 /* PBXContainerItemProxy */;
+		};
 		9011EF62CF1E603C9DFCBB651FABAE16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-schedule";
 			target = 4D9E89A4356EC2BEA459908E5ED45A48 /* Pods-schedule */;
 			targetProxy = 28CB72CD9DC212BDABE8C806569A77E7 /* PBXContainerItemProxy */;
 		};
+		CCD1A7A62D0D6C1A0C054AD6A98DFE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Toast-Swift";
+			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
+			targetProxy = BE13DD859C094494EBBA9363FDB4550D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		062594A239C210F2AE1AE9C934DEB9CF /* Debug */ = {
+		2EAAD140DD7D04712CE70C5E1982A370 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7897DE351B0438D7A9C7B796F3C17162 /* Pods-schedule.debug.xcconfig */;
+			baseConfigurationReference = 09F4AE7AEBCE260FDABEC890B296B775 /* Pods-schedule-scheduleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-schedule-scheduleUITests/Pods-schedule-scheduleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-schedule-scheduleUITests/Pods-schedule-scheduleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C266525425D30155A25F77DA754E68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF66E09F33C9FAD1DC989993C10B6DF /* Pods-schedule.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -382,6 +554,45 @@
 				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-schedule/Pods-schedule.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		56CFEA6D4BC9DACAB388559BB064E2E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B471E54CBB20CBB8BBE6DDDF6F7029E /* Pods-schedule-scheduleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-schedule-scheduleUITests/Pods-schedule-scheduleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-schedule-scheduleUITests/Pods-schedule-scheduleUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -459,47 +670,9 @@
 			};
 			name = Debug;
 		};
-		7471CEFA631AD4A2F4A4C023CB323E87 /* Debug */ = {
+		862778699A119F6F0D08B2203A700E68 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEE857A39C23DACAF0AF214CF06B61E6 /* Pods-schedule-scheduleUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-schedule-scheduleUITests/Pods-schedule-scheduleUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-schedule-scheduleUITests/Pods-schedule-scheduleUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		82DCFF70B8ACCDCCFB1AA4F9A3BA2E8F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2B5E06102320C1D815629D8F8CF8B47 /* Pods-schedule.release.xcconfig */;
+			baseConfigurationReference = 6DDB9E62475BDA2AABAB5983AF58DB41 /* Pods-schedule.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -530,11 +703,45 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		98898C6F52A6A7DBE554A243A24C2F51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66EF75F903B559A370A07A3AD7868AB9 /* Toast-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Toast-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Toast_Swift;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -596,48 +803,9 @@
 			};
 			name = Release;
 		};
-		BC42F8ED47FF2DF706A4AB04D8DB0E84 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D720E6550FE5CFEFCEC0950951600CD /* Pods-schedule-scheduleUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-schedule-scheduleUITests/Pods-schedule-scheduleUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-schedule-scheduleUITests/Pods-schedule-scheduleUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		ED37C5FD8764DAF9C4DF45C3F2DB2360 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D03B83F7DEC7A503E2AD68EA1B187C85 /* Pods-scheduleTests.debug.xcconfig */;
+			baseConfigurationReference = 8610E4CDAC701C275CA7B7EF820B1562 /* Pods-scheduleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -675,7 +843,7 @@
 		};
 		EDF779E4CCB783999EA9CC2975822952 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6614F641423001959FACB99EE1313634 /* Pods-scheduleTests.release.xcconfig */;
+			baseConfigurationReference = F266FBE13D761DC237A94D4F645E77E9 /* Pods-scheduleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -712,14 +880,68 @@
 			};
 			name = Release;
 		};
+		F3D7AA7B6797C4885E6D6232E7580830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66EF75F903B559A370A07A3AD7868AB9 /* Toast-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Toast-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Toast_Swift;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2DD2880779586A033B762F7A7DAF75FB /* Build configuration list for PBXNativeTarget "Pods-schedule-scheduleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CFEA6D4BC9DACAB388559BB064E2E9 /* Debug */,
+				2EAAD140DD7D04712CE70C5E1982A370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		351CC85F3AF8DF3F454D499E944CC0F8 /* Build configuration list for PBXNativeTarget "Pods-scheduleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED37C5FD8764DAF9C4DF45C3F2DB2360 /* Debug */,
 				EDF779E4CCB783999EA9CC2975822952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48122FDA194FB1ABCDD751C0B66FF2EE /* Build configuration list for PBXNativeTarget "Pods-schedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862778699A119F6F0D08B2203A700E68 /* Debug */,
+				4C266525425D30155A25F77DA754E68F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -733,20 +955,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98BBE97373823BB4B12BEF7F7AB00A9F /* Build configuration list for PBXNativeTarget "Pods-schedule" */ = {
+		B8C401847A53B4C2810311A8CBD715AD /* Build configuration list for PBXNativeTarget "Toast-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				062594A239C210F2AE1AE9C934DEB9CF /* Debug */,
-				82DCFF70B8ACCDCCFB1AA4F9A3BA2E8F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B6C16759AD96AC53847F75F80C06ACA8 /* Build configuration list for PBXNativeTarget "Pods-schedule-scheduleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7471CEFA631AD4A2F4A4C023CB323E87 /* Debug */,
-				BC42F8ED47FF2DF706A4AB04D8DB0E84 /* Release */,
+				98898C6F52A6A7DBE554A243A24C2F51 /* Debug */,
+				F3D7AA7B6797C4885E6D6232E7580830 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

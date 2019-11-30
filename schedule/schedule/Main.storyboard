@@ -65,13 +65,16 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAH-sr-M1x">
                                                         <rect key="frame" x="116" y="0.0" width="150" height="150"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Onz-gW-nwU">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Onz-gW-nwU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xan-RL-gkl">
                                                                 <rect key="frame" x="54" y="55" width="42" height="40"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                                                 <state key="normal" title="Foto"/>
+                                                                <connections>
+                                                                    <action selector="btnPhoto:" destination="7tG-ps-JFz" eventType="touchUpInside" id="ejk-0R-kNP"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -193,6 +196,7 @@
                     <navigationItem key="navigationItem" title="Aluno" largeTitleDisplayMode="never" id="3hz-Z2-TCL"/>
                     <connections>
                         <outlet property="addressField" destination="uxy-af-Qvg" id="ulC-8x-LjK"/>
+                        <outlet property="imageContent" destination="Onz-gW-nwU" id="MN4-1d-JNT"/>
                         <outlet property="nameField" destination="gMn-xg-J8b" id="MYE-Gw-p44"/>
                         <outlet property="phoneField" destination="3DF-yM-AfS" id="USf-ev-yoI"/>
                         <outlet property="pointField" destination="7zx-bf-CcB" id="PIp-r9-r49"/>
