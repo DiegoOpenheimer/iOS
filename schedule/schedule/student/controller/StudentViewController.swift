@@ -8,11 +8,15 @@
 
 import UIKit
 import Toast_Swift
+import CoreData
 
 class StudentViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    private let student: StudentModel = StudentModel()
-    private let studentDAO: StudentDAO = StudentDAO.shared
+    var student: Student?
+    private var context: NSManagedObjectContext {
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        return appDelegate!.persistentContainer.viewContext
+    }
     private let imagePickerController = UIImagePickerController()
     
     @IBOutlet weak var imageContent: UIImageView!
@@ -46,15 +50,15 @@ class StudentViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBAction func saveStudent() {
         if validate() {
             do {
-                student.photo = imageContent.image
-                let studentSaved = try studentDAO.save(student)
-                view.makeToast("Estudante \(studentSaved.name!) salvo com sucesso", completion: {
+                buildStudent()
+                try context.save()
+                view.makeToast("Estudante \(student!.name!) salvo com sucesso", completion: {
                     didTap in
                     self.navigationController?.popViewController(animated: true)
                 })
             } catch {
                 print(error)
-                view.makeToast("Falha ao salvar o estudante \(student.name!)")
+                view.makeToast("Falha ao salvar o estudante \(student!.name!)")
             }
         } else {
             let alert = Alert(controller: self)
@@ -86,37 +90,34 @@ class StudentViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     
     private func validate() -> Bool {
-        let name = nameField.text!
-        let point = pointField.text!
-        let phone = phoneField.text!
-        let address = addressField.text!
-        let site = siteField.text!
-        if name == "" {
+        if nameField.text! == "" {
             return false
-        } else {
-            student.name = name
         }
-        if point == "" {
+        if pointField.text! == "" {
              return false
-         } else {
-            student.point = Double(point)!
          }
-        if phone == "" {
+        if addressField.text! == "" {
              return false
-         } else {
-             student.phone = phone
          }
-        if address == "" {
+        if addressField.text! == "" {
              return false
-         } else {
-             student.address = address
          }
-        if site == "" {
+        if siteField.text! == "" {
              return false
-         } else {
-             student.site = site
          }
         return true
+    }
+    
+    private func buildStudent() {
+        if student == nil {
+            student = Student(context: context)
+        }
+        student?.name = nameField.text!
+        student?.point = Double(pointField.text!)!
+        student?.address = addressField.text!
+        student?.phone = phoneField.text!
+        student?.site = siteField.text!
+        student?.photo = imageContent.image
     }
     
     

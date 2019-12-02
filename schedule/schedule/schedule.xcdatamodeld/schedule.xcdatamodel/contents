@@ -2,7 +2,6 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19A602" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Student" representedClassName="Student" syncable="YES" codeGenerationType="class">
         <attribute name="address" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="photo" optional="YES" attributeType="Transformable"/>
@@ -10,6 +9,6 @@
         <attribute name="site" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Student" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Student" positionX="-63" positionY="-18" width="128" height="133"/>
     </elements>
 </model>

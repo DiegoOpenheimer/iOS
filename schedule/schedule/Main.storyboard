@@ -17,13 +17,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="WD1-aI-dtE">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentTableViewCell" id="WD1-aI-dtE" customClass="StudentTableViewCell" customModule="schedule" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="50.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WD1-aI-dtE" id="JML-1c-K0i">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Pf9-0e-FCs">
+                                            <rect key="frame" x="8" y="0.0" width="406" height="50.5"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SC1-7Q-wZS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5PO-CS-gQI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="83" height="79"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="KBq-Tc-Y3M"/>
+                                                        <constraint firstAttribute="width" constant="50" id="MT0-zi-zoy"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-fq-0oF">
+                                                    <rect key="frame" x="80" y="0.0" width="326" height="50.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Pf9-0e-FCs" firstAttribute="top" secondItem="JML-1c-K0i" secondAttribute="top" id="4Vg-rU-I1M"/>
+                                        <constraint firstAttribute="bottom" secondItem="Pf9-0e-FCs" secondAttribute="bottom" id="Ngv-wI-B6p"/>
+                                        <constraint firstAttribute="trailing" secondItem="Pf9-0e-FCs" secondAttribute="trailing" id="jkA-uN-rFm"/>
+                                        <constraint firstItem="Pf9-0e-FCs" firstAttribute="leading" secondItem="JML-1c-K0i" secondAttribute="leading" constant="8" id="kG2-Fo-RbE"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="i4g-fq-0oF" id="XXf-qX-KC7"/>
+                                    <outlet property="studentImageView" destination="5PO-CS-gQI" id="XS7-x4-nCX"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

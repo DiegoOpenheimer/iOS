@@ -36,7 +36,6 @@ class StudentDAO {
         let student = Student(context: context)
         student.name = studentModel.name
         student.address = studentModel.address
-        student.id = Int64(Date().timeIntervalSince1970 * 1000)
         student.phone = studentModel.phone
         student.site = studentModel.site
         student.point = studentModel.point!
