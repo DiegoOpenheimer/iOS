@@ -13,6 +13,7 @@ import CoreData
 class StudentViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var student: Student?
+    var studentDelegate: StudentDelegate?
     private var context: NSManagedObjectContext {
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         return appDelegate!.persistentContainer.viewContext
@@ -30,6 +31,9 @@ class StudentViewController: UIViewController, UIImagePickerControllerDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
+        if student != nil {
+            initializeEditing()
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -46,16 +50,14 @@ class StudentViewController: UIViewController, UIImagePickerControllerDelegate, 
         imageContent.layer.cornerRadius = 75
         imagePickerController.delegate = self
     }
-    
+        
     @IBAction func saveStudent() {
         if validate() {
             do {
                 buildStudent()
                 try context.save()
-                view.makeToast("Estudante \(student!.name!) salvo com sucesso", completion: {
-                    didTap in
-                    self.navigationController?.popViewController(animated: true)
-                })
+                studentDelegate?.onRegistered?(student!)
+                navigationController?.popViewController(animated: true)
             } catch {
                 print(error)
                 view.makeToast("Falha ao salvar o estudante \(student!.name!)")
@@ -118,6 +120,17 @@ class StudentViewController: UIViewController, UIImagePickerControllerDelegate, 
         student?.phone = phoneField.text!
         student?.site = siteField.text!
         student?.photo = imageContent.image
+    }
+    
+    private func initializeEditing() {
+        nameField.text = student?.name
+        addressField.text = student?.address
+        phoneField.text = student?.phone
+        siteField.text = student?.site
+        imageContent.image = student?.photo as? UIImage
+        if let point = student?.point {
+            pointField.text = String(point)
+        }
     }
     
     

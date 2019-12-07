@@ -24,15 +24,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Pf9-0e-FCs">
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Pf9-0e-FCs">
                                             <rect key="frame" x="8" y="0.0" width="406" height="50.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SC1-7Q-wZS">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5PO-CS-gQI">
-                                                            <rect key="frame" x="0.0" y="0.0" width="83" height="79"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -42,7 +42,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-fq-0oF">
-                                                    <rect key="frame" x="80" y="0.0" width="326" height="50.5"/>
+                                                    <rect key="frame" x="66" y="0.0" width="340" height="50.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -60,6 +60,7 @@
                                 <connections>
                                     <outlet property="label" destination="i4g-fq-0oF" id="XXf-qX-KC7"/>
                                     <outlet property="studentImageView" destination="5PO-CS-gQI" id="XS7-x4-nCX"/>
+                                    <segue destination="7tG-ps-JFz" kind="show" identifier="editStudent" id="JJc-ax-xig"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -72,7 +73,7 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="Prr-sF-xcj"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="iAM-YY-C18">
                             <connections>
-                                <segue destination="7tG-ps-JFz" kind="show" id="RCL-fw-WJZ"/>
+                                <segue destination="7tG-ps-JFz" kind="show" identifier="addStudent" id="RCL-fw-WJZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -264,4 +265,7 @@
             <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JJc-ax-xig"/>
+    </inferredMetricsTieBreakers>
 </document>

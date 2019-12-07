@@ -8,10 +8,12 @@
 
 import UIKit
 import CoreData
+import Toast_Swift
 
-class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFetchedResultsControllerDelegate {
+class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFetchedResultsControllerDelegate, StudentDelegate {
 
     private var students = Array<Student>()
+    private var studentSelected: Student?
     private let uiSearchController = UISearchController(searchResultsController: nil)
     private var context: NSManagedObjectContext {
         let delegate = UIApplication.shared.delegate as? AppDelegate
@@ -26,13 +28,31 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFet
         navigationItem.searchController = uiSearchController
         getStudents()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let viewController = segue.destination as! StudentViewController
+        if segue.identifier == "addStudent" {
+            viewController.studentDelegate = self
+        } else if segue.identifier == "editStudent" {
+            viewController.student = studentSelected
+        }
+    }
         
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
        print(searchText)
     }
-
+    
+    func onRegistered(_ student: Student) {
+        view.makeToast("Estudante \(student.name!) salvo com sucesso")
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return students.count
+    }
+    
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        studentSelected = students[indexPath.row]
+        return indexPath
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,6 +60,22 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFet
         let student = students[indexPath.row]
         cell.buildCell(student: student)
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let student = students[indexPath.row]
+            context.delete(student)
+            do {
+                try context.save()
+                if let index = students.firstIndex(of: student) {
+                    students.remove(at: index)
+                    tableView.deleteRows(at: [indexPath], with: .fade)
+                }
+            } catch {
+                view.makeToast("Falha ao remover o estudante \(student.name!)")
+            }
+        }
     }
     
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
