@@ -19,10 +19,22 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter
+            .default
+            .addObserver(self, selector: #selector(initialize), name: Notification.Name(Notifications.becomeActive), object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        initialize()
+    }
+    
+    @objc private func initialize() {
+        print("start")
         btnToggle.setOn(configuration.automatic, animated: false)
         uiSegment.selectedSegmentIndex = configuration.colorScheme
         lbTime.text = "Mudar após \(configuration.time) segundos"

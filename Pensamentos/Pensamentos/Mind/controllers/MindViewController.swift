@@ -22,6 +22,14 @@ class MindViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter
+             .default
+             .addObserver(self, selector: #selector(initialize), name: Notification.Name(Notifications.becomeActive), object: nil)
+    }
+    
+    @objc func initialize() {
+        prepareMinds()
+        startTimer()
     }
     
     override func viewWillAppear(_ animated: Bool) {

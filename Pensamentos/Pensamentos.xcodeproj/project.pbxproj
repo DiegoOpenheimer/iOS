@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C83B691F23AADEE2003DA8AD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C83B691E23AADEE2003DA8AD /* Settings.bundle */; };
+		C83B692223AAF786003DA8AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83B692123AAF786003DA8AD /* Constants.swift */; };
 		C84693B923A550BB000893B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84693B823A550BB000893B9 /* AppDelegate.swift */; };
 		C84693BB23A550BB000893B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84693BA23A550BB000893B9 /* SceneDelegate.swift */; };
 		C84693BD23A550BB000893B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84693BC23A550BB000893B9 /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C83B691E23AADEE2003DA8AD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C83B692123AAF786003DA8AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C84693B523A550BB000893B9 /* Pensamentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pensamentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84693B823A550BB000893B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C84693BA23A550BB000893B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C83B692023AAF770003DA8AD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C83B692123AAF786003DA8AD /* Constants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		C84693AC23A550BB000893B9 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +125,7 @@
 		C84693B723A550BB000893B9 /* Pensamentos */ = {
 			isa = PBXGroup;
 			children = (
+				C83B692023AAF770003DA8AD /* Shared */,
 				C84693FA23A57A8E000893B9 /* Services */,
 				C84693F423A56C62000893B9 /* Settings */,
 				C84693F223A56C52000893B9 /* Mind */,
@@ -125,6 +138,7 @@
 				C84693C123A550D6000893B9 /* Assets.xcassets */,
 				C84693C323A550D6000893B9 /* LaunchScreen.storyboard */,
 				C84693C623A550D6000893B9 /* Info.plist */,
+				C83B691E23AADEE2003DA8AD /* Settings.bundle */,
 			);
 			path = Pensamentos;
 			sourceTree = "<group>";
@@ -313,6 +327,7 @@
 				C84693C523A550D6000893B9 /* LaunchScreen.storyboard in Resources */,
 				C84693C223A550D6000893B9 /* Assets.xcassets in Resources */,
 				C84693ED23A55ACF000893B9 /* Savoye LET.ttc in Resources */,
+				C83B691F23AADEE2003DA8AD /* Settings.bundle in Resources */,
 				C84693C023A550BC000893B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +361,7 @@
 				C84693FD23A57AB6000893B9 /* Config.swift in Sources */,
 				C84693B923A550BB000893B9 /* AppDelegate.swift in Sources */,
 				C84693BB23A550BB000893B9 /* SceneDelegate.swift in Sources */,
+				C83B692223AAF786003DA8AD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
