@@ -10,78 +10,63 @@ import UIKit
 
 class ConsolesTableViewController: UITableViewController {
 
+    let consoleManager = ConsoleManager.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        consoleManager.delegate = self
+        consoleManager.requestConsoles()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let label = UILabel()
-        label.textAlignment = .center
-        label.text = "Nenhuma plataforma registrada"
-        tableView.backgroundView = label
-        tableView.separatorStyle = .none
-        return 0
+        if consoleManager.consoles.isEmpty {
+            let label = UILabel()
+            label.textAlignment = .center
+            label.text = "Nenhuma plataforma registrada"
+            tableView.backgroundView = label
+            tableView.separatorStyle = .none
+        } else {
+            tableView.backgroundView = nil
+            tableView.separatorStyle = .singleLine
+        }
+        return consoleManager.consoles.count
     }
 
-    /*
+    @IBAction func onTapAdd(_ sender: UIBarButtonItem) {
+        let alert = Alert(controller: self, tintColor: UIColor(named: "secondary"))
+        alert.show(message: "Preencha o nome da plataforma") { [ weak alert ] (value: String?) in
+            guard let name = value, !name.isEmpty else { return }
+            do {
+                try self.consoleManager.save(with: name)
+            } catch {
+                alert?.show(message: "Falha ao cadastrar uma plataforma")
+            }
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = UITableViewCell()
+        cell.textLabel?.text = consoleManager.consoles[indexPath.row].name
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            consoleManager.remove(at: indexPath.row)
+        }
     }
-    */
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+}
 
+extension ConsolesTableViewController : ConsoleDelegate {
+    
+    func onDelete(at index: Int) {
+        tableView.deleteRows(at: [IndexPath(row: index, section: 0)], with: .fade)
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    
+    func onNotifyChangeConsoles() {
+        tableView.reloadData()
     }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }

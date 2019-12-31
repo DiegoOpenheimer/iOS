@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C80F76E323BACA5900F9FAD0 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F76E223BACA5900F9FAD0 /* Console.swift */; };
+		C80F76E523BACED000F9FAD0 /* ConsoleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F76E423BACED000F9FAD0 /* ConsoleDelegate.swift */; };
 		C834644023B4151C008C5DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C834643F23B4151C008C5DC0 /* AppDelegate.swift */; };
 		C834644223B4151C008C5DC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C834644123B4151C008C5DC0 /* SceneDelegate.swift */; };
 		C834644723B4151C008C5DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C834644523B4151C008C5DC0 /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C80F76E223BACA5900F9FAD0 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		C80F76E423BACED000F9FAD0 /* ConsoleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleDelegate.swift; sourceTree = "<group>"; };
 		C834643C23B4151C008C5DC0 /* MyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C834643F23B4151C008C5DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C834644123B4151C008C5DC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C80F76E123BACA4900F9FAD0 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				C80F76E223BACA5900F9FAD0 /* Console.swift */,
+				C80F76E423BACED000F9FAD0 /* ConsoleDelegate.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
 		C834643323B4151C008C5DC0 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +122,7 @@
 		C834643E23B4151C008C5DC0 /* MyGame */ = {
 			isa = PBXGroup;
 			children = (
+				C80F76E123BACA4900F9FAD0 /* services */,
 				C8D154FE23B97A780018DD71 /* shared */,
 				C834647A23B43792008C5DC0 /* consoles */,
 				C834647623B43265008C5DC0 /* game */,
@@ -334,6 +348,8 @@
 				C834644023B4151C008C5DC0 /* AppDelegate.swift in Sources */,
 				C834644223B4151C008C5DC0 /* SceneDelegate.swift in Sources */,
 				C8D154FD23B9749A0018DD71 /* ViewController+CoreData.swift in Sources */,
+				C80F76E523BACED000F9FAD0 /* ConsoleDelegate.swift in Sources */,
+				C80F76E323BACA5900F9FAD0 /* Console.swift in Sources */,
 				C834647F23B437D8008C5DC0 /* ConsolesTableViewController.swift in Sources */,
 				C834647923B432FE008C5DC0 /* GameViewController.swift in Sources */,
 				C8D1550023B97A890018DD71 /* Alert.swift in Sources */,

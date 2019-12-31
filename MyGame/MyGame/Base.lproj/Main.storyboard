@@ -210,6 +210,9 @@
                     <navigationItem key="navigationItem" title="Lista de plataformas" id="hEs-aH-RBc">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="HZ7-CC-WzL">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onTapAdd:" destination="bNs-mO-gr5" id="SWe-M9-vBW"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
