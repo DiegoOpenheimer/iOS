@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8031FC623BD492200CBB360 /* DetailGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8031FC523BD492200CBB360 /* DetailGameViewController.swift */; };
 		C80F76E323BACA5900F9FAD0 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F76E223BACA5900F9FAD0 /* Console.swift */; };
 		C80F76E523BACED000F9FAD0 /* ConsoleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F76E423BACED000F9FAD0 /* ConsoleDelegate.swift */; };
 		C834644023B4151C008C5DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C834643F23B4151C008C5DC0 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 		C834647F23B437D8008C5DC0 /* ConsolesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C834647E23B437D8008C5DC0 /* ConsolesTableViewController.swift */; };
 		C8D154FD23B9749A0018DD71 /* ViewController+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D154FC23B9749A0018DD71 /* ViewController+CoreData.swift */; };
 		C8D1550023B97A890018DD71 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D154FF23B97A890018DD71 /* Alert.swift */; };
+		C8FB28E123BC144100C525E2 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FB28E023BC144100C525E2 /* GameTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8031FC523BD492200CBB360 /* DetailGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewController.swift; sourceTree = "<group>"; };
 		C80F76E223BACA5900F9FAD0 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		C80F76E423BACED000F9FAD0 /* ConsoleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleDelegate.swift; sourceTree = "<group>"; };
 		C834643C23B4151C008C5DC0 /* MyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +66,7 @@
 		C834647E23B437D8008C5DC0 /* ConsolesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolesTableViewController.swift; sourceTree = "<group>"; };
 		C8D154FC23B9749A0018DD71 /* ViewController+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CoreData.swift"; sourceTree = "<group>"; };
 		C8D154FF23B97A890018DD71 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		C8FB28E023BC144100C525E2 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				C834647423B4231E008C5DC0 /* GameTableViewController.swift */,
+				C8FB28E023BC144100C525E2 /* GameTableViewCell.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				C834647823B432FE008C5DC0 /* GameViewController.swift */,
+				C8031FC523BD492200CBB360 /* DetailGameViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -349,7 +355,9 @@
 				C834644223B4151C008C5DC0 /* SceneDelegate.swift in Sources */,
 				C8D154FD23B9749A0018DD71 /* ViewController+CoreData.swift in Sources */,
 				C80F76E523BACED000F9FAD0 /* ConsoleDelegate.swift in Sources */,
+				C8031FC623BD492200CBB360 /* DetailGameViewController.swift in Sources */,
 				C80F76E323BACA5900F9FAD0 /* Console.swift in Sources */,
+				C8FB28E123BC144100C525E2 /* GameTableViewCell.swift in Sources */,
 				C834647F23B437D8008C5DC0 /* ConsolesTableViewController.swift in Sources */,
 				C834647923B432FE008C5DC0 /* GameViewController.swift in Sources */,
 				C8D1550023B97A890018DD71 /* Alert.swift in Sources */,

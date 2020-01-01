@@ -9,9 +9,11 @@
 import UIKit
 
 class GameViewController: UIViewController {
-    
-    let mockData = [ "Xbox", "Playstation", "Nintendo" ]
 
+    let consoleManager = ConsoleManager.shared
+    var consoleSelected: Console?
+    var game: Game?
+    
     @IBOutlet weak var uiImage: UIImageView!
     @IBOutlet weak var calendarPicker: UIDatePicker!
     @IBOutlet weak var nameField: UITextField!
@@ -21,7 +23,14 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        consolePicker.delegate = self
+        consoleManager.requestConsoles()
         initialize()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        context.rollback()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -30,18 +39,44 @@ class GameViewController: UIViewController {
     
     private func initialize() {
         btn.layer.cornerRadius = 5
-        inputPlatform.inputView = consolePicker
-        consolePicker.selectedRow(inComponent: 0)
-        inputPlatform.text = mockData[0]
-        consolePicker.delegate = self
+        if !consoleManager.consoles.isEmpty {
+            inputPlatform.isEnabled = true
+            inputPlatform.inputView = consolePicker
+        } else {
+            inputPlatform.isEnabled = false
+        }
+        if let gm = game {
+            nameField.text = gm.name
+            uiImage.image = gm.cover as? UIImage
+            calendarPicker.date = gm.releaseDate!
+            if let console = gm.console {
+                let index = consoleManager.consoles.firstIndex(of: console)!
+                initConsolePicker(at: index, showInInput: true)
+            } else {
+                initConsolePicker(at: 0)
+            }
+        } else {
+            initConsolePicker(at: 0)
+        }
+    }
+    
+    private func initConsolePicker(at index: Int, showInInput: Bool = false) {
+        consoleSelected = consoleManager.consoles[index]
+        consolePicker.selectRow(index, inComponent: 0, animated: true)
+        if showInInput {
+            inputPlatform.text = consoleSelected?.name
+        }
     }
     
     @IBAction func onTappedBtnAddAndEdit(_ sender: UIButton) {
         if validateForm() {
-            let game = Game(context: context)
-            game.name = nameField.text
-            game.releaseDate = calendarPicker.date
-            game.cover = uiImage.image
+            if game == nil {
+                game = Game(context: context)
+            }
+            game?.name = nameField.text
+            game?.releaseDate = calendarPicker.date
+            game?.cover = uiImage.image
+            game?.console = consoleSelected
             do {
                 try saveContext()
                 navigationController?.popViewController(animated: true)
@@ -82,15 +117,16 @@ extension GameViewController : UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return mockData.count
+        return consoleManager.consoles.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return mockData[row]
+        return consoleManager.consoles[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        inputPlatform.text = mockData[row]
+        consoleSelected = consoleManager.consoles[row]
+        inputPlatform.text = consoleManager.consoles[row].name
     }
     
 }
