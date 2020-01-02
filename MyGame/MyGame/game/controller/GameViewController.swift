@@ -61,10 +61,12 @@ class GameViewController: UIViewController {
     }
     
     private func initConsolePicker(at index: Int, showInInput: Bool = false) {
-        consoleSelected = consoleManager.consoles[index]
-        consolePicker.selectRow(index, inComponent: 0, animated: true)
-        if showInInput {
-            inputPlatform.text = consoleSelected?.name
+        if !consoleManager.consoles.isEmpty {
+            consoleSelected = consoleManager.consoles[index]
+            consolePicker.selectRow(index, inComponent: 0, animated: true)
+            if showInInput {
+                inputPlatform.text = consoleSelected?.name
+            }
         }
     }
     

@@ -28,7 +28,11 @@ class GameTableViewCell: UITableViewCell {
         let thickness: CGFloat = 1.0
           let bottomBorder = CALayer()
           bottomBorder.frame = CGRect(x:0, y: viewLabel.frame.size.height - thickness, width: viewLabel.frame.size.width, height:thickness)
-        bottomBorder.backgroundColor = UIColor.opaqueSeparator.cgColor
+        if #available(iOS 13.0, *) {
+            bottomBorder.backgroundColor = UIColor.opaqueSeparator.cgColor
+        } else {
+            bottomBorder.backgroundColor = UIColor.lightGray.cgColor
+        }
           viewLabel.layer.addSublayer(bottomBorder)
 
     }
