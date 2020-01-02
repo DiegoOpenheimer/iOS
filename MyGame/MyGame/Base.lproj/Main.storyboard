@@ -98,6 +98,7 @@
                     <navigationItem key="navigationItem" title="Adicionar jogo" id="nkE-J9-M8z"/>
                     <connections>
                         <outlet property="btn" destination="oP8-Y6-ghC" id="ea1-0B-TA3"/>
+                        <outlet property="btnSelectedPhoto" destination="hta-14-NHj" id="LE9-mN-TgL"/>
                         <outlet property="calendarPicker" destination="WcW-tD-GJV" id="WT2-pf-sQG"/>
                         <outlet property="inputPlatform" destination="U6U-bG-Uv4" id="UvK-Vf-Sjd"/>
                         <outlet property="nameField" destination="orY-LL-Syk" id="61G-yA-TFy"/>

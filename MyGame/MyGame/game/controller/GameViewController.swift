@@ -19,6 +19,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var inputPlatform: UITextField!
     @IBOutlet weak var btn: UIButton!
+    @IBOutlet weak var btnSelectedPhoto: UIButton!
     let consolePicker = UIPickerView()
 
     override func viewDidLoad() {
@@ -103,7 +104,7 @@ class GameViewController: UIViewController {
         let imageController = UIImagePickerController()
         imageController.delegate = self
         let alert = Alert(controller: self)
-        alert.showPickerImage(message: "Escolher uma foto") { source in
+        alert.showPickerImage(message: "Escolher uma foto", sourceView: btnSelectedPhoto) { source in
             imageController.sourceType = source
             self.present(imageController, animated: true)
         }

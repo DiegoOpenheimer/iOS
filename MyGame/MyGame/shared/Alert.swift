@@ -60,8 +60,9 @@ class Alert {
      - parameter title: alert title
      - parameter message: alert message
      - parameter onChoose: callback executed when the image is choosen
+     - parameter sourceView: view to show alert when the device is ipad
      */
-    func showPickerImage(_ title: String = "Atenção", message: String, onChoose: OnChoose?) {
+    func showPickerImage(_ title: String = "Atenção", message: String, sourceView: UIView? = nil, onChoose: OnChoose?) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
         setTintColor(alert)
         let photoLibrary = UIAlertAction(title: "Fotos da biblioteca", style: .default, handler: {_ in onChoose?(.photoLibrary)})
@@ -73,6 +74,9 @@ class Alert {
         alert.addAction(album)
         alert.addAction(photoLibrary)
         alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            alert.popoverPresentationController?.sourceView = sourceView ?? controller?.view
+        }
         controller?.present(alert, animated: true)
     }
     
